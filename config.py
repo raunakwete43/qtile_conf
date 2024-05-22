@@ -7,13 +7,12 @@ from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad
 from libqtile.lazy import lazy
 
 # from qtile_extras import widget as widgetex
-from qtile_extras import widget
-from qtile_extras.widget.decorations import RectDecoration
+from libqtile import widget
 
 import colors
 
 mod = "mod4"
-terminal = "st"
+terminal = "kitty"
 app_menu = "./.config/rofi/scripts/launcher_t1"
 logout = "./.config/rofi/scripts/powermenu_t1"
 
@@ -193,6 +192,7 @@ group_matches = [
                 "jetbrains-studio",
                 "jetbrains-rustrover",
                 "jetbrains-clion-nova",
+                "code - insiders",
             ]
         )
     ],
@@ -558,6 +558,7 @@ floating_layout = layout.Floating(
         Match(wm_class="alsamixer"),
         Match(wm_class="mpv"),
         Match(wm_class="matplotlib"),
+        Match(wm_class="Tk"),
     ]
 )
 auto_fullscreen = True
