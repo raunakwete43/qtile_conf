@@ -275,7 +275,7 @@ ctrl + alt + o
 
 #Toggle Touchpad
 XF86TouchpadToggle
-	sh /home/manupro85/.config/arco-chadwm/scripts/touchpad.sh
+	bash /home/manupro85/Downloads/scripts/touchpad.sh
 
 
 #ColorPicker
